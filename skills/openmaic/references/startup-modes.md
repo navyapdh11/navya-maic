@@ -2,7 +2,7 @@
 
 ## Goal
 
-Help the user choose how OpenMAIC should run before you start anything.
+Help the user choose how NAVYA-OPENCLASS should run before you start anything.
 
 ## Options
 
@@ -67,3 +67,4 @@ If the skill config provides a custom `url`, use that instead.
 
 - Ask the user to choose one startup mode.
 - Ask again before running the selected command.
+

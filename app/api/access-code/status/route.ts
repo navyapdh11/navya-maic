@@ -9,9 +9,10 @@ export async function GET() {
   let authenticated = false;
   if (enabled) {
     const cookieStore = await cookies();
-    const token = cookieStore.get('openmaic_access')?.value;
+    const token = cookieStore.get('NAVYA-OPENCLASS_access')?.value;
     authenticated = !!token && verifyAccessToken(token, accessCode);
   }
 
   return apiSuccess({ enabled, authenticated });
 }
+

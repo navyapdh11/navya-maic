@@ -146,7 +146,7 @@ export const PROVIDERS: Record<ProviderId, ProviderConfig> = {
         contextWindow: 400000,
         outputWindow: 128000,
         capabilities: {
-          streaming: true,
+          streaming: false,
           tools: true,
           vision: true,
           thinking: {
@@ -275,6 +275,15 @@ export const PROVIDERS: Record<ProviderId, ProviderConfig> = {
         },
       },
     ],
+  },
+
+  'openai-compatible': {
+    id: 'openai-compatible',
+    name: 'OpenAI-Compatible',
+    type: 'openai',
+    requiresApiKey: true,
+    icon: '/logos/openai.svg',
+    models: [],
   },
 
   anthropic: {
